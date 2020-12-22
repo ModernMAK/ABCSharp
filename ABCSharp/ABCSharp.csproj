@@ -42,14 +42,6 @@
         <Compile Include="src\Tokens\DecorationNote.cs" />
         <Compile Include="src\TuneHeader.cs" />
         <Compile Include="src\TuneLexer.cs" />
-        <Compile Include="Old\Fraction.cs" />
-        <Compile Include="Old\IInstrument.cs" />
-        <Compile Include="Old\Note.cs" />
-        <Compile Include="Old\Pitch.cs" />
-        <Compile Include="Old\PitchUtility.cs" />
-        <Compile Include="Old\Song.cs" />
-        <Compile Include="Old\TokenCode.cs" />
-        <Compile Include="Old\Tokenizer.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="src\Fraction.cs" />
         <Compile Include="src\InfoKey.cs" />
