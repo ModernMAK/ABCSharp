@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABCSharp", "ABCSharp\ABCSharp.csproj", "{D89B7B3D-414C-4FD8-A4ED-5EC6AA3735F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Driver", "Driver\Driver.csproj", "{7FD78180-A710-4F4D-B089-E120406804B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D89B7B3D-414C-4FD8-A4ED-5EC6AA3735F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D89B7B3D-414C-4FD8-A4ED-5EC6AA3735F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D89B7B3D-414C-4FD8-A4ED-5EC6AA3735F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D89B7B3D-414C-4FD8-A4ED-5EC6AA3735F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FD78180-A710-4F4D-B089-E120406804B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FD78180-A710-4F4D-B089-E120406804B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FD78180-A710-4F4D-B089-E120406804B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FD78180-A710-4F4D-B089-E120406804B0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

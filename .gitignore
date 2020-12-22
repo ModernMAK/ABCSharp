@@ -1,0 +1,19 @@
+
+[Bb]in/
+[Oo]bj/
+[Pp]ackages/
+.idea
+riderModule.iml
+/_ReSharper.Caches/
+*.suo
+*.user
+.vs/
+_UpgradeReport_Files/
+
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+
+# Just copy an abc file from the internet and paste it in bin, or set WD to the folder that contains the downloaded abc file
+Driver/test.abc

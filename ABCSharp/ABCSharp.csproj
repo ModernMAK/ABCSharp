@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{D89B7B3D-414C-4FD8-A4ED-5EC6AA3735F9}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>ABCSharp</RootNamespace>
+        <AssemblyName>ABCSharp</AssemblyName>
+        <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+        <LangVersion>latest</LangVersion>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="System" />
+        <Reference Include="System.Core" />
+        <Reference Include="System.Data" />
+        <Reference Include="System.Xml" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="src\Tokens\DecorationNote.cs" />
+        <Compile Include="src\TuneHeader.cs" />
+        <Compile Include="src\TuneLexer.cs" />
+        <Compile Include="Old\Fraction.cs" />
+        <Compile Include="Old\IInstrument.cs" />
+        <Compile Include="Old\Note.cs" />
+        <Compile Include="Old\Pitch.cs" />
+        <Compile Include="Old\PitchUtility.cs" />
+        <Compile Include="Old\Song.cs" />
+        <Compile Include="Old\TokenCode.cs" />
+        <Compile Include="Old\Tokenizer.cs" />
+        <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="src\Fraction.cs" />
+        <Compile Include="src\InfoKey.cs" />
+        <Compile Include="src\Key.cs" />
+        <Compile Include="src\Constants.cs" />
+        <Compile Include="src\ChromaticPitch.cs" />
+        <Compile Include="src\Pitch.cs" />
+        <Compile Include="src\TimeSignature.cs" />
+        <Compile Include="src\Tokens\AnnotationToken.cs" />
+        <Compile Include="src\Tokens\BeamToken.cs" />
+        <Compile Include="src\Tokens\BodyFieldToken.cs" />
+        <Compile Include="src\Tokens\ChordBracketToken.cs" />
+        <Compile Include="src\Tokens\ChordSymbolToken.cs" />
+        <Compile Include="src\Tokens\ContinuationToken.cs" />
+        <Compile Include="src\Tokens\GracenoteBraceToken.cs" />
+        <Compile Include="src\Tokens\InlineFieldToken.cs" />
+        <Compile Include="src\Tokens\NewlineToken.cs" />
+        <Compile Include="src\Tokens\NoteToken.cs" />
+        <Compile Include="src\Tokens\RestToken.cs" />
+        <Compile Include="src\Tokens\SlurToken.cs" />
+        <Compile Include="src\Tokens\SpaceToken.cs" />
+        <Compile Include="src\Tokens\TieToken.cs" />
+        <Compile Include="src\Tokens\Token.cs" />
+        <Compile Include="src\Tokens\TupletToken.cs" />
+        <Compile Include="src\TuneParser.cs" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+         Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+    -->
+
+</Project>
