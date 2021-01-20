@@ -30,7 +30,7 @@ namespace ABCSharp.Tokens
         [Obsolete("Redundant; use Length.Value")]
         public float Duration => Length.Value;
 
-        public Pitch Pitch { get; }
+        public Pitch Pitch { get; set; }
 
         public void Dotify(string dots, string direction)
         {

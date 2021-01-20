@@ -12,7 +12,7 @@ namespace ABCSharp
 
         public static Key FromName(string name)
         {
-            Console.Out.WriteLine("Not Implimented - But Ignoring");
+            Console.Out.WriteLine("'Key.FromName(name)' Not Implimented, Ignoring");
             // throw new NotImplementedException();
             return new Key();
         }

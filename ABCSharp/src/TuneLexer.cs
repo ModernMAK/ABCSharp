@@ -135,6 +135,7 @@ namespace ABCSharp
                 token = new BeamToken() {Line = lineIndex, Char = charIndex, Text = match.Value};
             }
 
+            Tokens.Add(token);
             charIndex += token.Text.Length;
             return true;
         }
@@ -397,20 +398,18 @@ namespace ABCSharp
             var numerator = (numeratorGroup.Success) ? int.Parse(numeratorGroup.Value) : 1;
             var denominator = (denominatorGroup.Success) ? int.Parse(denominatorGroup.Value) : 1;
 
-            if (groups[1].Value == "X" || groups[1].Value == "Z")
-            {
-                numerator = numerator * TimeSignature.Meter.Denominator;
-                denominator = denominator * TimeSignature.Meter.Numerator;
-            }
+            var measureRest = (groups[1].Value == "X" || groups[1].Value == "Z");
 
 
             var token = new RestToken()
             {
                 Char = charIndex,
+                MeasureRest = measureRest,
                 Length = new Fraction(numerator, denominator),
                 Line = lineIndex,
                 Text = match.Value,
-                Symbol = match.Value
+                Symbol = match.Value,
+                TimeSignature = TimeSignature
             };
             Tokens.Add(token);
             if (HasPendingDots)

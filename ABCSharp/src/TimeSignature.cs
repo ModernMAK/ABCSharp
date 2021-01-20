@@ -9,8 +9,14 @@ namespace ABCSharp
             Tenpo = tempo;
         }
 
+        public bool FreeMeeter => Meter.Equals(default(Fraction));
         public Fraction Meter { get; set; }
         public Fraction UnitLength { get; set; }
+
+        public Fraction AsUnitLength(Fraction fraction) => fraction * UnitLength;
+        public Fraction AsBeat(Fraction fraction) => fraction * Meter.Denominator; //divide by 1/denom
+        public static Fraction AsBeat(Fraction fraction, int beatNote) => fraction * beatNote;
+        public Fraction ConvertToMeter(Fraction fraction) => fraction * Meter;
         public object Tenpo { get; set; }
 
         public static Fraction ParseFraction(string fraction)
